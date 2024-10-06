@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gig Bidding</title>
+    <link rel="stylesheet" href="bid.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="page1.html">Home</a></li>
+            <li><a href="bid.html">Bid</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html">Profile</a></li>
+
+        </ul>
+    </nav>
+
+    <main class="main">
+        <div class="leaderboard">
+            <h2>Top Performers</h2>
+            <div class="card-container-horizontal" id="userList">
+                <!-- Sample Cards -->
+                <div class="performer-card" data-username="Anisha Kumari" data-bid="29">
+                    <img src="man1.jpg" alt="Anisha Kumari">
+                    <h3>Anisha Kumari</h3>
+                    <p>$29/hr</p>
+                    <p>100% Job Success</p>
+                    <div class="tags">
+                        <span>English</span>
+                        <span>Chore Runner</span>
+                    </div>
+                    <button class="bid-btn">Bid</button>
+                </div>
+
+                <div class="performer-card" data-username="John Doe" data-bid="35">
+                    <img src="man1.jpg" alt="Shivam Bhai">
+                    <h3>Shivam Bhai</h3>
+                    <p>$35/hr</p>
+                    <p>95% Job Success</p>
+                    <div class="tags">
+                        <span>French</span>
+                        <span>Tech Support</span>
+                    </div>
+                    <button class="bid-btn">Bid</button>
+                </div>
+
+                <div class="performer-card" data-username="Jane Smith" data-bid="50">
+                    <img src="man3.jpg" alt="Hir Chirania">
+                    <h3>Hir Chirania</h3>
+                    <p>$50/hr</p>
+                    <p>90% Job Success</p>
+                    <div class="tags">
+                        <span>Spanish</span>
+                        <span>Designer</span>
+                    </div>
+                    <button class="bid-btn">Bid</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="timer">
+            <h2>Time Remaining: <span id="countdown">00:30</span></h2>
+        </div>
+    </main>
+
+    <!-- Popup for Bidding -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>Place Your Bid for <span id="bidderName"></span></h2>
+            <p>Current Highest Bid: $<span id="currentBid"></span>/hr</p>
+            <form id="bidForm">
+                <input type="number" id="newBid" placeholder="Enter your bid">
+                <button type="submit">Submit Bid</button>
+            </form>
+            <button class="close-btn" id="closePopup">Close</button>
+        </div>
+    </div>
+
+    <script src="bid.js"></script>
+</body>
+</html>

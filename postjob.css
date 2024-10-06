@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #D5E0E8, #f7f8fc);
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-logo img {
+    width: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #C6C4D9;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Main Content */
+.main-content {
+    margin-top: 100px;
+    padding: 0 20px;
+}
+
+/* Section Spacing */
+.sec-space {
+    padding: 60px 0;
+}
+
+/* Gig Posting Form */
+.gig-post h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #3948ab;
+    margin-bottom: 20px;
+}
+
+.gig-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.gig-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 500;
+}
+
+.gig-form input,
+.gig-form select,
+.gig-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: border 0.3s ease;
+}
+
+.gig-form input:focus,
+.gig-form select:focus,
+.gig-form textarea:focus {
+    border-color: #3948ab;
+    outline: none;
+}
+
+.btn-submit {
+    background-color: rgb(0, 80, 20);
+    color: white;
+    font-family: c
+    'Times New Roman', Times, serif;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+ 
+        background-color: rgb(255, 255, 255); 
+        border: 2px solid rgb(0, 116, 0); 
+        color: black; 
+    
+}

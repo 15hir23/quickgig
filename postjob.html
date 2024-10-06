@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickGig - Post a Gig</title>
+    <link rel="stylesheet" href="postjob.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="logo.png" alt="QuickGig Logo">
+        </div>
+        <ul>
+            <li><a href="page1.html">Home</a></li>
+            <li><a href="bid.html">Bid</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+
+        <section class="gig-post sec-space">
+            <h2>Post a Gig</h2>
+            <form action="postjob.php" method="POST" class="gig-form">
+                <label for="gig-title">Gig Title:</label>
+                <input type="text" id="gig-title" name="gig-title" placeholder="Enter the gig title" required>
+
+                <label for="gig-description">Description:</label>
+                <textarea id="gig-description" name="gig-description" rows="5" placeholder="Describe the gig in detail" required></textarea>
+
+                <label for="gig-price">Price (INR):</label>
+                <input type="number" id="gig-price" name="gig-price" placeholder="Enter your price" required>
+
+                <label for="gig-category">Category:</label>
+                <select id="gig-category" name="gig-category" required>
+                    <option value="">Select Category</option>
+                    <option value="development-it">Development and IT</option>
+                    <option value="design">Design</option>
+                    <option value="writing">Writing & Translation</option>
+                    <option value="marketing">Digital Marketing</option>
+                    <option value="others">Others</option>
+                </select>
+
+                <label for="gig-skills">Skills Required:</label>
+                <input type="text" id="gig-skills" name="gig-skills" placeholder="List required skills, separated by commas" required>
+
+                <label for="gig-deadline">Deadline:</label>
+                <input type="date" id="gig-deadline" name="gig-deadline" required>
+
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </section>
+
+    </div>
+
+    <script src="toggle.js"></script>
+</body>
+</html>

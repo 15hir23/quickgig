@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #D5E0E8;
+    padding: 10px;
+    color: #4A5568;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10; 
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 80px;
+    height: 60px;
+    background-color: #e0e6f7; 
+    padding: 5px
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #6d8bdd;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile .name h1 {
+    font-size: 28px;
+    color: #041330;
+    font-weight: 600;
+}
+
+.profile .name p {
+    color: #282167;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.personalinfo {
+    position: relative; 
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.streak-ui {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    background-color: #f0f0f0; 
+    border-radius: 8px; 
+    padding: 5px 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    font-size: 18px;
+    cursor: pointer;
+    width: 100px;
+    text-align: center; 
+}
+
+.streak-count {
+    font-weight: bold; 
+    color: #ff5722; 
+}
+
+.streak-label {
+    margin-left: 5px; 
+}
+.btd {
+    display: flex;
+    align-items: center;
+    color: #030b15;
+    font-size: 14px;
+}
+
+.btd span {
+    margin-left: 10px;
+}
+
+.fa-calendar-days {
+    color: #010d1a;
+    font-size: 20px;
+}
+
+/* Tracking Section */
+.tracking {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.trackdiv {
+    /* background: linear-gradient(135deg, #E2E8F0, #EDF2F7); */
+    background-color: #C6C4D9;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.trackdiv:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.trackdiv p {
+    margin-top: 5px;
+    color: #718096;
+    font-size: 14px;
+}
+
+.trackdiv span.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #2d19e3;
+    border-radius: 50%;
+}
+
+.trackdiv p:first-child {
+    font-weight: bold;
+    font-size: 16px;
+    color: #17c814;
+}
+
+.trackdiv p:nth-child(2) {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px 0;
+    color: #082c54;
+}
+
+.trackdiv p:nth-child(3) {
+    color: #8a38a1;
+    font-weight: bold;
+}
+
+.graphsection {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.graphsection .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.graphsection .heading h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2D3748;
+}
+
+.graphsection input[type="date"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #CBD5E0;
+    transition: border-color 0.3s ease;
+}
+
+.graphsection input[type="date"]:hover {
+    border-color: #63B3ED;
+}
+
+.Tasks {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.Tasks .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Tasks .heading h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2D3748;
+}
+
+#measuretask {
+    font-size: 14px;
+    color: #A0AEC0;
+}
+
+#dates {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #CBD5E0;
+    transition: border-color 0.3s ease;
+}
+
+#dates:hover {
+    border-color: #63B3ED;
+}
+
+.infooftasks ul {
+    list-style-type: none;
+}
+
+.list1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #F7FAFC;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.list1:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.taskitem {
+    display: flex;
+    align-items: center;
+}
+
+.taskitem p {
+    font-size: 14px;
+    color: #2D3748;
+    margin-left: 10px;
+}
+
+.icons {
+    width: 10px;
+    height: 10px;
+    background-color: #5029df;
+    border-radius: 50%;
+}
+
+.taskstatus {
+    font-size: 14px;
+    color: #A0AEC0;
+}
+
+.tasktime {
+    font-size: 14px;
+    color: #2D3748;
+    font-weight: bold;
+}
+
+.activity-section {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    height: 400px;
+    overflow-y: auto;
+}
+.moredetials {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; 
+    margin-top: 20px; 
+}
+
+.moredetials button {
+    background-color: #add8e6; 
+    border: none;
+    color: #fff; 
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+.moredetials button:hover {
+    background-color: #e0e6f7;
+    color: #131D41; 
+}
+
+.edit button, .logout button {
+    outline: none;
+    background-color: #131D41;
+}
+
+.activity-section .message {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #F7FAFC;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.message p {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #2D3748;
+}
+.graph {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    height: 300px;
+}
+.graphsection {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+.celebration {
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    width: 100%; 
+    height: 100%; 
+    pointer-events: none; 
+    overflow: hidden; 
+    z-index: 5; 
+}
+
+.star {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ffeb3b;
+    border-radius: 50%;
+    pointer-events: none; 
+    animation: rise 1s forwards, fade 1s forwards;
+}
+
+@keyframes rise {
+    from {
+        transform: translateY(0) scale(1);
+    }
+    to {
+        transform: translateY(-100px) scale(1.5);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color:#b7cde4;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Close Button */
+.close {
+    color: #082c54;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.modal-content button:hover {
+    background-color: #218838;
+}
+canvas {
+    display: block;
+    max-width: 100%;
+    height: 400px;
+    margin: 20px auto;
+}
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <title>Profile</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="logo.png" alt="QuickGig Logo">
+        </div>
+        <ul>
+            <li><a href="page1.html">Home</a></li>
+            <li><a href="bid.html">Bid</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="profile">
+            <div class="name">
+                <h1>Hello, Margret</h1>
+                <p>Track your Progress, You almost reached your goal.</p>
+            </div>
+            <div class="btd">
+                <p>12 DEC 2005</p>
+                <span class="dot"><i class="fa-solid fa-calendar-days"></i></span>
+            </div>
+        </div>
+        <div class="personalinfo">
+            <div class="dp">
+                <img src="image.jpg" alt="">
+            </div>
+            <div class="streak-ui" onclick="celebrate()">
+                <span class="streak-count">5</span> 
+                <span class="streak-label">Days</span>
+            </div>
+        
+            <div class="peronalcontents">
+                <div class="username">
+                    <h2>margret@1200.com</h2>
+                    <h3>Intern</h3>
+                </div>
+            </div>
+            <div class="moredetials">
+                <div class="edit">
+                    <button type="button" onclick="openModal()">Edit Profile</button>
+                </div>
+                <div class="logout">
+                    <button>Logout</button>
+                </div>
+            </div>
+            
+            <div id="editModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2>Edit Profile</h2>
+                    <form id="editProfileForm">
+                        <label for="username">Username</label>
+                        <input type="text" id="editUsername" value="margret@1200.com">
+                        
+                        <label for="role">Role</label>
+                        <input type="text" id="editRole" value="Intern">
+                        
+                        <label for="birthdate">Birthdate</label>
+                        <input type="date" id="editBirthdate" value="2005-12-12">
+                        
+                        <button type="button" onclick="saveChanges()">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tracking">
+            <div class="trackdiv">
+                <span class="dot"></span>
+                <p>Finished</p>
+                <p>18</p>
+                <p>+8 Tasks</p>
+            </div>
+            <div class="trackdiv">
+                <span class="dot"></span>
+                <p>Tracked</p>
+                <p>31 hr</p>
+                <p>-6 hr</p>
+            </div>
+            <div class="trackdiv">
+                <span class="dot"></span>
+                <p>Efficiency</p>
+                <p>93%</p>
+                <p>+12%</p>
+            </div>
+            
+        </div>
+        <div class="graphsection">
+            <div class="heading">
+                <h2 style="color: rgb(52, 230, 33);">Performance</h2>
+            <input type="date">    
+            </div>
+        </div>
+        <div class="graph">
+            <canvas id="taskCompletionChart" width="200" height="30"></canvas>
+        </div>
+        <div class="Tasks">
+            <div class="heading">
+                <h2 style="color: coral;">Current Tasks</h2>
+                <p id="measuretask">Done 30%</p>
+                <select id="dates">
+                    <option value="Week">Week</option>
+                    <option value="Month">Month</option>
+                    <option value="Year">Year</option>
+                    <option value="Day">Day</option>
+                </select>
+            </div>
+            <div class="infooftasks">
+                <ul>
+                    <li class="list1">
+                        <div class="taskitem">
+                            <span class="icons"></span>
+                            <p>Product Review For U18 Market</p>
+                        </div>
+                        <div class="taskstatus">In progress</div>
+                        <div class="tasktime">4h</div>
+                    </li>
+                    <li class="list1">
+                        <div class="taskitem">
+                            <span class="icons"></span>
+                            <p>Product Review For U18 Market</p>
+                        </div>
+                        <div class="taskstatus">In progress</div>
+                        <div class="tasktime">4h</div>
+                    </li>
+                    <li class="list1">
+                        <div class="taskitem">
+                            <span class="icons"></span>
+                            <p>Product Review For U18 Market</p>
+                        </div>
+                        <div class="taskstatus">In progress</div>
+                        <div class="tasktime">4h</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            
+    </section>
+</body>
+</html>
